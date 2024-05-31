@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman dengan Navigasi</title>
+    <style>
+        body {
+            background-color: #F5CD00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .restaurant-title {
+            font-size: 70px;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+         nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 40px;
+        }
+                nav ul li:not(:last-child) {
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="makanan.html">Pelanggan</a></li>
+            <li><a href="manajer menu.html">Manager</a></li>
+            <li><a href="kasir.html">Kasir</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="dapur.html">Dapur</a></li>
+        </ul>
+    </nav>
+<img class="centered-image" src="assets/image/icon/icon.png" alt="Foto Anda">
+    <h1 class="restaurant-title">RESTO AYAM KAMPUNG</h1>
+    
+</body>
+
+</html>

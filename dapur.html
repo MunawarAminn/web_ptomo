@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Ayam kampung</title>
+    <link href="assets/boostrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .merah {
+            color: black;
+        }
+        .row .col b a {
+            text-decoration: none;
+            color: inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .me-3 img {
+            margin-right: 10px;
+        }
+
+        #stat-pesan {
+margin-left: 0%;
+width: 918PX;
+left: 301px;
+top: 0px;
+        }
+
+        .stats {
+            font-weight: bold;
+            font-size: 20px;
+            background-color: white;
+          width: 917px;
+height: 34px;
+left: 302px;
+top: 422px;
+            
+            
+            
+        }
+.border {
+  border: 1px solid black!important;
+  
+}
+        /* Track Proses Order */
+        .track {
+            position: relative;
+            background-color: black;
+            height: 7px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 100px;
+            margin-top: 50px;
+        }
+
+        .track .step {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            width: 25%;
+            margin-top: -18px;
+            text-align: center;
+            position: relative
+        }
+
+        .track .step.active:before {
+            background: white;
+        }
+
+        .track .step::before {
+            height: 7px;
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            top: 18px
+        }
+
+        .track .step.active .icon {
+            background: white;
+            color: #fff
+        }
+
+        .track .icon {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            line-height: 40px;
+            position: relative;
+            border-radius: 100%;
+            background: #fff
+        }
+
+        .track .icon img {
+            margin-top: 10px;
+            width: 42px;
+        }
+
+        .track .step.active .text {
+            font-weight: bold;
+            color: #000
+        }
+
+        .track .text {
+            display: block;
+            margin-top: 7px
+        }
+
+        /* Tabel */
+
+        .border {
+            padding: 1000px;
+            border-radius: 8px;
+        }
+
+        table {
+            margin-top: 20px;
+            
+        }
+
+        thead {
+            background-color: #1F1D2B;
+        }
+
+        tfoot {
+            height: 35px;
+            background-color: #fefdfd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+<a class="navbar-brand" href="index.html" style="color: white;">RESTO AYAM KAMPUNG</a>
+                </a>
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Mid elements -->
+            <div class="d-flex align-items-center"></div>
+            <div class="input-group margin-lr">
+                <span class="input-group-text border-radius" id="search"><img src="assets/img/search.png" alt=""
+                        class="icon-size"></span>
+                <input type="text" class="form-control form-control-sm border-radius p-15"
+                    placeholder="Cari makanan dan Minuman !!!" aria-label="Username"
+                    aria-describedby="search">
+            </div>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- ICON -->
+                <div class="d-flex align-items-center me-3">
+                    <img src="assets/img/user.png" class="rounded-circle" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/cart.png" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/home.png" height="25" alt="Default" loading="lazy" />
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    
+    <!-- Navbar -->
+    <!-- Container -->
+    <div class="container text-left">
+        <div class="row">
+            <div class="col">
+                <span class="input-group-text border-radius" id="Menu"><img src="assets/img/dapur.png" alt=""
+                        style="width: 30px;height: 30px;" class="icon-size">
+                    <b style="font-size: 15px;"><a href="">DAPUR</a></b>
+            </div>
+        </div>
+    </div>
+    <!-- Status Pemesanan -->
+    <div class="card" id="stat-pesan">
+        <span class="stats text-center">STATUS PESANAN</span>
+        <div class="track">
+            <div class="step active"> <span class="icon"> <img src="assets/img/jam.png" alt=""> </span> <span
+                    class="text">Pesanan Diproses</span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/cook.png" alt=""> </span> <span class="text">
+                    Pesanan Dimasak</span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/ready.png" alt=""> </span> <span class="text">
+                    Disajikan </span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/serve.png" alt=""> </span> <span class="text">
+                    Diantar</span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/money.png" alt=""> </span> <span class="text">
+                   proses Pembayaran</span> </div>
+        </div>
+    </div>
+    <!-- Akhir Pemesanan -->
+    <div class="card" id="stat-pesan">
+        <span class="stats text-center">STOK DAPUR</span>
+        <div class="container">
+            <span style="margin-left: 5%;">Status Pemesanan</span><br>
+            <input type="text" placeholder="AM001" style="margin-left: 5%;">
+            <table class="table table-striped border"style="color: white;" style="width:90%; margin-left: 5%;">
+                <thead>
+                    <tr>
+                        <th>Nama Makanan</th>
+                        <th>Qty</th>
+                        <th>Stok</th>
+                        <th>Status</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ayam Geprek</td>
+                        <td>1</td>
+                        <td>19 Porsi</td>
+                        <td>Available</td>
+                        <td>Take Away</td>
+                    </tr>
+                    <tr>
+                        <td>Es Kuwud</td>
+                        <td>1</td>
+                        <td>19 Porsi</td>
+                        <td>Available</td>
+                        <td>Delivery</td>
+                    </tr>
+                    <tr>
+                        <td>Tahu</td>
+                        <td>1</td>
+                        <td>30 Porsi</td>
+                        <td>Available</td>
+                        <td>Delivery</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <table class="table table-striped border " style="color: white;"style="width:90%; margin-left: 5%;">
+                <thead>
+                    <tr>
+                        <th>Nama Makanan</th>
+                        <th>Qty</th>
+                        <th></th>
+                        <th>Status</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ayam Geprek</td>
+                        <td>1</td>
+                        <th></th>
+                        <td>Available</td>
+                        <td>Take Away</td>
+                    </tr>
+                    <tr>
+                        <td>Es Kuwud</td>
+                        <td>1</td>
+                        <th></th>
+                        <td>Available</td>
+                        <td>Delivery</td>
+                    </tr>
+                    <tr>
+                        <td>Tahu</td>
+                        <td>1</td>
+                        <th></th>
+                        <td>Available</td>
+                        <td>Delivery</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- Status Pemesanan -->
+    <div class="card" id="stat-pesan" style="margin-bottom: 10%;">
+        <span class="stats text-center">STATUS PESANAN</span>
+        <div class="track">
+            <div class="step active"> <span class="icon"> <img src="assets/img/jam.png" alt=""> </span> <span
+                    class="text">Pesanan Diproses</span> </div>
+            <div class="step active"> <span class="icon"> <img src="assets/img/cook.png" alt=""> </span> <span
+                    class="text">
+                    Pesanan Dimasak</span> </div>
+            <div class="step active"> <span class="icon"> <img src="assets/img/ready.png" alt=""> </span> <span
+                    class="text">
+                    Disajikan </span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/serve.png" alt=""> </span> <span class="text">
+                    Diantar</span> </div>
+            <div class="step"> <span class="icon"> <img src="assets/img/money.png" alt=""> </span> <span class="text">
+                   Proses Pembayaran</span> </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/984a8c9bbd.js" crossorigin="anonymous"></script>

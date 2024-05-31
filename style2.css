@@ -1,0 +1,268 @@
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    font-family: "Barlow Semi Bold", sans-serif;
+    color: #fd0a0a;
+}
+
+body {
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    background: #252836;
+}
+
+.navbar-custom {
+    background-color: #1F1D2B;
+    top: -30px;
+    height: 120px;
+    width: 1440px;
+}
+
+.navbar-custom .btn-outline-success {
+    color: #fff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.navbar-custom .btn-outline-success:hover {
+    color: #fff;
+    background-color: #ffca2c;
+    border-color: #ffca2c;
+}
+
+.navbar-custom .btn-cari {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.navbar-custom .btn-cari:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.banner {
+    width: 1000px;
+    text-align: left;
+}
+
+.navbar-custom .nav-link.menu-makanan {
+    color: #EA7C69;
+}
+
+.navbar-custom .nav-link.menu-minuman {
+    color: #fff;
+}
+
+.navbar-brand img {
+    width: 268px;
+    height: 65px;
+}
+
+.rectangle {
+position: absolute;
+    width: 289px;
+    height: 340px;
+    left: 50px;
+    top: 235px;
+    padding-left: 200px;
+    margin-left: 100px;
+    background: #1F1D2B;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    box-sizing: border-box;
+    color: #fff;
+    justify-content: center;
+}
+
+.rectangle img {
+    position: absolute;
+    width: 288px;
+    height: 137px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+}
+
+/* ukuran ayam goreng */
+.rectangle-content {
+    margin-bottom: 110px;
+    position: relative;
+}
+
+.rectangle-content h3 {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Barlow Medium", sans-serif;
+}
+
+.rectangle-content p {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Barlow Regular", sans-serif;
+    text-align: center;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon-container i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.rectangle-2 {
+    position: absolute;
+    width: 291px;
+    height: 340px;
+    left: 370px;
+    top: 235px;
+        padding-left: 200px;
+        margin-left: 100px;
+        background: #1F1D2B;
+        border-radius: 16px;
+        display: flex;
+        align-items: flex-end;
+        padding: 16px;
+        box-sizing: border-box;
+        color: #fff;
+        justify-content: center;
+}
+
+.rectangle-2 img {
+    position: absolute;
+    width: 288px;
+    height: 137px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+}
+
+/* Tambahan CSS */
+.navbar-custom .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-custom .navbar-nav {
+    margin-bottom: 0;
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    margin-bottom: 10px;
+}
+/*icon*/
+
+.counter-btn.plus-btn {
+    margin-left: 3px;
+}
+.counter-value {
+
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        font-size: 18px;
+        margin: 0 10px;
+    }
+.counter-btn.minus-btn {
+    margin-left: 50px;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.sidebar-image {
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left: 15px;
+    top: 141px;
+}
+
+.menu-habis{
+font-size: 14px;
+    position: absolute;
+        width: 104px;
+        height: 834px;
+        left: 26px;
+        top: 100px;
+}
+
+.menu-ijo {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left: 46px;
+    top: 100px;
+}
+
+.menu-katsu {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left: 10px;
+    top: 100px;
+}
+
+.menu-jeruk {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 34px;
+    left: 0px;
+    top: 100px;
+}
+.menu-melon {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left: 6px;
+    top: 100px;
+}
+
+.menu-mangga {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left:20px;
+    top: 100px;
+}
+
+.menu-goreng {
+    font-size: 14px;
+    position: absolute;
+    width: 104px;
+    height: 834px;
+    left: -10px;
+    top: 100px;
+}
+
+.baku {
+    position: absolute;
+    left: 350px;
+    top: 250px;
+}

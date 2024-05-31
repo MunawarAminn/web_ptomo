@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYAM RESTO KAMPUNG</title>
+    <link href="assets/boostrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+            color: inherit;
+        }
+
+        .merah {
+            color: BLACK;
+        }
+
+        .row .col b a {
+            text-decoration: none;
+            color: inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .me-3 img {
+            margin-right: 10px;
+        }
+
+        #stat-pesan {
+            margin-left: 13%;
+            width: 75%;
+        }
+
+        .stats {
+            font-weight: bold;
+            font-size: 20px;
+            background-color: white;
+            height: 100%;
+        }
+
+        /* Track Proses Order */
+        .track {
+            position: relative;
+            background-color: #ddd;
+            height: 7px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 100px;
+            margin-top: 50px;
+        }
+
+        .track .step {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            width: 25%;
+            margin-top: -18px;
+            text-align: center;
+            position: relative
+        }
+
+        .track .step.active:before {
+            background: white
+        }
+
+        .track .step::before {
+            height: 7px;
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            top: 18px
+        }
+
+        .track .step.active .icon {
+            background: #fff;
+            color: #fff
+        }
+
+        .track .icon {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            line-height: 40px;
+            position: relative;
+            border-radius: 100%;
+            background: #ddd
+        }
+
+        .track .icon img {
+            margin-top: 10px;
+            width: 42px;
+        }
+
+        .track .step.active .text {
+            font-weight: bold;
+            color: #000
+        }
+
+        .track .text {
+            display: block;
+            margin-top: 7px
+        }
+
+        /* Tabel */
+
+        .border {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        table {
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: black;
+        }
+
+        tfoot {
+            height: 60px;
+            background-color: #EA7C69;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html" style="color: white;">RESTO AYAM KAMPUNG</a>
+                </a>
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Mid elements -->
+            <div class="d-flex align-items-center"></div>
+            <div class="input-group margin-lr">
+                <span class="input-group-text border-radius" id="search"><img src="assets/img/search.png" alt=""
+                        class="icon-size"></span>
+                <input type="text" class="form-control form-control-sm border-radius p-15"
+                    placeholder="find your favorite foods and drinks !!!" aria-label="Username"
+                    aria-describedby="search">
+            </div>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- ICON -->
+                <div class="d-flex align-items-center me-3">
+                    <img src="assets/img/user.png" class="rounded-circle" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/cart.png" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/home.png" height="25" alt="Default" loading="lazy" />
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- Container -->
+    <div class="container text-left">
+        <div class="row">
+            <div class="col">
+                <span class="input-group-text border-radius" id="Menu"><img src="assets/img/kasir.png" alt=""
+                        style="width: 30px;height: 30px;" class="icon-size">
+                    <b style="font-size: 15px;"><a href="">Pembayaran</a></b>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="stat-pesan">
+        <span class="stats text-center">Struk Pembayaran</span>
+        <div class="container">
+            <div class="row ms-5">
+                <div class="col-8">
+                    <span>
+                        No. Transaksi : AM001<br>
+                        Hari/Tanggal : Senin, 17 mei 2023<br>
+                        Waktu : 12.00<br>
+                        Nama Pelanggan : Munawar Amin<br>
+                        No. Meja : 10
+                    </span>
+                </div>
+            </div>
+            <table class="table table-striped border" style="width:90%; margin-left: 5%;">
+                <thead>
+                    <tr>
+                        <th style="color: white;">Nama Makanan</th>
+                        <th style="color: white;">Qty</th>
+                        <th style="color: white;">Harga</th>
+                        <th style="color: white;">Sub Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: white;">Ayam Geprek</td>
+                        <td style="color: white;">1</td>
+                        <td style="color: white;">Rp15.000</td>
+                        <td style="color: white;">Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;">Es Kuwud</td>
+                        <td style="color: white;">1</td>
+                        <td style="color: white;">Rp8.000</td>
+                        <td style="color: white;">Rp8.000</td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;">Tahu</td>
+                        <td style="color: white;">1</td>
+                        <td style="color: white;">Rp2.000</td>
+                        <td style="color: white;">Rp2.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="color: white;">TOTAL</th>
+                        <th></th>
+                        <th></th>
+                        <th style="color: white;">Rp25.000</th>
+                    </tr>
+                    <tr>
+                        <td style="color: white;">PPN 10%</td>
+                        <td></td>
+                        <td></td>
+                        <td style="color: white;">Rp 2.500</td>
+                    </tr>
+                    <tr>
+                        <th style="color: white;">SUB TOTAL</th>
+                        <th></th>
+                        <th></th>
+                        <th style="color: white;">Rp27.500</th>
+                    </tr>
+                    <tr>
+                        <td style="color: white;">TUNAI</td>
+                        <td></td>
+                        <td></td>
+                        <td style="color: white;">Rp30.000</td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;">KEMBALIAN</td>
+                        <td></td>
+                        <td></td>
+                        <td style="color: white;">Rp 2.500</td>
+                    </tr>
+                    <tr>
+                        <th style="color: white;">METODE PEMBAYARAN</tH>
+                        <td></td>
+                        <td></td>
+                        <th style="color: white;">CASH</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+</body>
+
+</html>
+<script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/984a8c9bbd.js" crossorigin="anonymous"></script>

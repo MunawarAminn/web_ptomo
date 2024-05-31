@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodStore - Website</title>
+    <link href="assets/boostrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .merah {
+            color: #F34444;
+        }
+
+        .row .col b a {
+            text-decoration: none;
+            color: inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .me-3 img {
+            margin-right: 10px;
+        }
+
+        #stat-pesan {
+            margin-left: 13%;
+            width: 75%;
+        }
+
+        .active {
+            background-color: #FB7777;
+            color: white;
+        }
+
+        #REPORT {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10%;
+        }
+
+        .stats {
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #D9D9D9;
+            height: 100%;
+        }
+
+        .border {
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html" style="color: white;">RESTO AYAM KAMPUNG</a>
+                </a>
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Mid elements -->
+            <div class="d-flex align-items-center"></div>
+            <div class="input-group margin-lr">
+                <span class="input-group-text border-radius" id="search"><img src="assets/img/search.png" alt=""
+                        class="icon-size"></span>
+                <input type="text" class="form-control form-control-sm border-radius p-15"
+                    placeholder="Cari makanan dan Minuman" aria-label="Username" aria-describedby="search">
+            </div>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- ICON -->
+                <div class="d-flex align-items-center me-3">
+                    <img src="assets/img/user.png" class="rounded-circle" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/cart.png" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/home.png" height="25" alt="Default" loading="lazy" />
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <div class="container text-left">
+        <div class="row">
+            <div class="col">
+                <span class="input-group-text border-radius" id="Menu">
+                    <img src="assets/img/image 2.png" alt="" style="width: 30px;height: 30px;" class="icon-size">
+                    <b style="font-size: 15px;"><a href="#">INFORMASI PERSEDIAN MENU</a></b>
+                    <b style="font-size: 15px;"><a href="laporan.html">LAPORAN</a></b>
+                    <b style="font-size: 15px;"class="active"><a href="keuntungan.html">KEUNTUNGAN</a></b>
+                </span>
+            </div>
+            <!-- Navbar -->
+            <!-- Container -->
+            <div class="container text-right">
+                <div class="row">
+                    <div class="col">
+                        <span class="input-group-text border-radius" id="Menu"><img src="assets/img/manajer.png" alt=""
+                                style="width: 30px;height: 30px;" class="icon-size">
+                            <b style="font-size: 15px;"><a href="manajer menu.html">INFORMASI PERSEDIAAN MENU</a></b>
+                            <b style="font-size: 15px;"><a href="laporan.html">LAPORAN</a></b>
+                            <b style="font-size: 15px;"class="active"><a href="keuntungan.html">KEUNTUNGAN</a></b></span>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/image/icon/keuntungan.png" alt="" id="REPORT">
+</body>
+
+</html>
+<script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/984a8c9bbd.js" crossorigin="anonymous"></script>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTO AYAM KAMPUNG </title>
+    <link href="assets/boostrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+
+        .row .col b a {
+            text-decoration: none;
+            color: inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #stat-pesan {
+            margin-left: 13%;
+            width: 75%;
+        }
+
+        /* Posisi navbar */
+        .navbar {
+            position: fixed;
+            width: 1520px;
+            height: 120px;
+            left: 0px;
+            top: 0px;
+            z-index: 100\;
+        }
+
+        /* Posisi menu */
+        .container {
+            margin-top: 140px;
+        }
+
+        /* Gaya persegi panjang */
+        .rectangle {
+            width: 900px;
+            height: 150px;
+            margin-top: -100px;
+            background-color: #1F1D2B;
+            position: relative;
+            z-index: 1;
+            margin-bottom: -100px;
+            border-radius: 16px;
+        }
+
+        /* Gaya gambar */
+        .image-container {
+            position: relative;
+            z-index: 2;
+            left: 0px;
+            width: 220px;
+            height: 100px;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-top:-145px ;
+            border-radius: 16px;
+        }
+
+            .tahu {
+            display: block;
+            width: 100%;
+            height: auto;
+            left: 50px;
+            top:-90px ;
+            position: relative;
+            z-index: 2;
+        }
+          .harga{
+            width: 100%;
+            height: auto;
+            left: 500px;
+            top:-110px ;
+            position: relative;
+            z-index: 2;
+    }
+
+              .delete{
+            width: 100%;
+            height: auto;
+            left: 510px;
+            top:-110px ;
+            position: relative;
+            z-index: 2;
+            color: white;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html" style="color: white;">RESTO AYAM KAMPUNG</a>
+                </a>
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Mid elements -->
+            <div class="d-flex align-items-center"></div>
+            <div class="input-group margin-lr">
+                <span class="input-group-text border-radius" id="search"><img src="assets/img/search.png" alt=""
+                        class="icon-size"></span>
+                <input type="text" class="form-control form-control-sm border-radius p-15"
+                    placeholder="find your favorite foods and drinks !!!" aria-label="Username"
+                    aria-describedby="search">
+            </div>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- ICON -->
+                <div class="d-flex align-items-center me-3">
+                    <img src="assets/img/user.png" class="rounded-circle" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/cart.png" height="25" alt="Default" loading="lazy" />
+                    <img src="assets/img/home.png" height="25" alt="Default" loading="lazy" />
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- Container -->
+    <div class="container text-left">
+        <div class="row">
+            <div class="col">
+                <span class="input-group-text border-radius" id="Menu"><img src="assets/img/bill.png" alt=""
+                        style="width: 30px;height: 30px;" class="icon-size">
+                    <b style="font-size: 15px;"><a href="">Pesanan Saya</a></b>
+            </div>
+        </div>
+    </div>
+    <div class="" id="stat-pesan">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-2 ms-5">
+                    <div class="rectangle"></div>
+                    <div class="image-container">
+                        <img src="assets/image/Produk/gprek.jpg" class="img-thumbnail rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-8 mb-4">
+                    <div class="card-body">
+                        <h5 class="tahu">Ayam Geprek</h5>
+                        <p class="tahu">Menu Makanan</p>
+                        <span class="harga">Rp 15.000</span>
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/1.png" alt="" width="80px">
+                        </div>
+                        <a href=""><span
+                                class="delete">DELETE</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-2 ms-5">
+                    <div class="rectangle"></div>
+                    <div class="image-container">
+                        <img src="assets/image/Produk/jambu.jpg" class="img-thumbnail rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-8 mb-4">
+                    <div class="card-body">
+                        <h5 class="tahu">Es Kuwud</h5>
+                        <p class="tahu">Menu minuman</p>
+                        <span class="harga">Rp 8.000</span>
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/1.png" alt="" width="80px">
+                        </div>
+                        <a href=""><span
+                                class="delete">DELETE</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-2 ms-5">
+                    <div class="rectangle"></div>
+                    <div class="image-container">
+                        <img src="assets/image/Produk/tahu.jpg" class="img-thumbnail rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-8 mb-4">
+                    <div class="card-body">
+                        <h5 class="tahu">Tahu</h5>
+                        <p class="tahu">Menu Tambahan</p>
+                        <span class="harga">Rp 2.000</span>
+                        <div class="tahu>
+                            <img src="assets/img/1.png" alt="" width="80px">
+                        </div>
+                        <a href=""><span
+                                class="delete">DELETE</span></a>
+                    </div>
+                </div>
+
+    </div>
+</body>
+
+</html>
+<script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/984a8c9bbd.js" crossorigin="anonymous"></script>
